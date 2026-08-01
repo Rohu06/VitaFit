@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Suggested Water Intake -->
+    <TextView
+        android:id="@+id/suggested_water_goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Daily Water Goal: Calculating..."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="12dp"/>
+
+    <!-- Reminder Interval Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reminder Interval (minutes)"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reminder_interval_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Start & End Time Inputs -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Start Time (24h, e.g., 8)"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/start_time_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View android:layout_width="8dp" android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="End Time (24h, e.g., 22)"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/end_time_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Add Reminder Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/set_reminder_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Reminder"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_marginTop="16dp" />
+
+    <!-- Sound & Vibration Toggles -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/sound_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Sound"
+            android:checked="true"/>
+
+        <View android:layout_width="16dp" android:layout_height="wrap_content"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/vibration_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Vibration"/>
+    </LinearLayout>
+
+    <!-- Custom Notification Quote -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Custom Notification Quote"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/quote_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stay hydrated, stay happy!"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

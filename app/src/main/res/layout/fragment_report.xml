@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_WB"
+    android:orientation="vertical"
+    tools:context=".User.ReportFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionbar_color"
+        android:elevation="5dp"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:fontFamily="@font/motor_oil"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="25dp"
+            android:text="Report &amp; Analytics"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tab_bar"
+        app:tabIndicatorColor="@color/blue_dark"
+        app:tabIndicatorFullWidth="false"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/blue_white_color"
+        app:tabTextAppearance="@style/MyCustomTextAppearance"
+        app:tabTextColor="@color/hintBW_color"
+
+        />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

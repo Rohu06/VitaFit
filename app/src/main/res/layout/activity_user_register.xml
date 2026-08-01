@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_white"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:transitionName="Register Page"
+    tools:context=".User.welcome_screen">
+
+    <ImageView
+        android:id="@+id/signup_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/back_btn"
+        android:paddingVertical="10dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="5dp"
+        android:src="@drawable/arrow_back_24"
+        android:transitionName="transition_back_arrow_btn" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/signup_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/create_acc"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:transitionName="appNameAnimation" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/signup_subtitle_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/already_have_account"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:transitionName="appNameAnimation" />
+
+                <TextView
+                    android:id="@+id/register_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/sign_in"
+                    android:textColor="@color/blue_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+
+                <!--            material design text Fields-->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/full_name"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_color"
+                    app:boxStrokeColor="@color/input_border_color"
+                    app:boxStrokeWidthFocused="1dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:startIconDrawable="@drawable/ic_person"
+                    app:startIconTint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/register_full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        />
+
+                    <!-- Email  Field-->
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:textColorHint="@color/hint_color"
+                    app:boxStrokeColor="@color/input_border_color"
+                    app:boxStrokeWidthFocused="1dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:startIconDrawable="@drawable/email_24"
+                    app:startIconTint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/register_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        />
+
+
+                    <!-- Height Field-->
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/height"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_color"
+                    app:boxStrokeColor="@color/input_border_color"
+                    app:boxStrokeWidthFocused="1dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:startIconDrawable="@drawable/ic_height"
+                    app:startIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <!-- Weight Field-->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/weight"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_color"
+                    app:boxStrokeColor="@color/input_border_color"
+                    app:boxStrokeWidthFocused="1dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:startIconDrawable="@drawable/ic_weight_scale"
+                    app:startIconTint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/register_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        />
+
+
+                    <!-- Date of birth Field-->
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/dob"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color"
+                app:boxStrokeColor="@color/input_border_color"
+                app:boxStrokeWidthFocused="1dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/ic_age"
+                app:startIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <!-- Choose Password Field-->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/choose_password"
+                    android:textColorHint="@color/hint_color"
+                    app:boxStrokeColor="@color/input_border_color"
+                    app:boxStrokeWidthFocused="1dp"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:startIconDrawable="@drawable/password_lock_24"
+                    app:startIconTint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/register_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPassword"
+                        android:textColor="@color/black"
+
+                        />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <!--            remember me and forget password buttons-->
+
+
+                <Button
+                    android:id="@+id/register_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/greenish"
+                    android:elevation="5dp"
+                    android:paddingVertical="15dp"
+                    android:text="@string/register"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:transitionName="transition_next_btn" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/greenish" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/or"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/greenish"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+
+                >
+
+                <ImageButton
+                    android:id="@+id/google_login"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/custom_btn"
+                    android:elevation="8dp"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/google"
+                    android:contentDescription="@string/des"/>
+
+                <ImageButton
+                    android:id="@+id/facebook_login"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/custom_btn"
+                    android:elevation="8dp"
+                    android:paddingTop="8dp"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/des"
+                    android:src="@drawable/facebook" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

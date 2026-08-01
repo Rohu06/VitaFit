@@ -1,0 +1,311 @@
+<resources>
+    <string name="app_name">VitaFit</string>
+    <string name="full_name">Full Name</string>
+    <string name="username">Username</string>
+    <string name="email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="next">Next</string>
+    <string name="user_login">Login</string>
+    <string name="register">Register</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="get_registered">Get Registered.</string>
+    <string name="sign_in_title">Sign-In to Continue</string>
+    <string name="login_facebook">Facebook</string>
+    <string name="login_google">Google</string>
+    <string name="login_twitter">Twitter</string>
+    <string name="lets_get_started">Lets get started</string>
+    <string name="slide_1_title">Blood Pressure</string>
+    <string name="slide_2_title">Heart Beats </string>
+    <string name="slide_3_title">Sugar Level </string>
+    <string name="slide_4_title">Calories Intake</string>
+    <string name="slide_1_desc">Control your blood pressure with multiple build-in features like measurements graphs, comprehensive reports your doctor will love</string>
+    <string name="slide_2_desc"> Measure accurately your pulse and heart beat zone with your &amp; health monitor after sleeping or during workouts &amp; training.</string>
+    <string name="slide_3_desc">Get help with managing your diabetes, it is quick and easy! Ranked the Top Diabetes App by Healthline 3 times.</string>
+    <string name="slide_4_desc">MyFitnessPal is one of the most popular calorie counters right now. It tracks your weight and calculates a recommended daily calorie intake.</string>
+    <string name="do_not_have_any_account">Don\'t have any Account?</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="welcome_image_desc">welcome_image</string>
+    <string name="or">or</string>
+    <string name="welcome_tagline">Higher standards of care every day.</string>
+    <string name="skip_btn">skip</string>
+    <string name="profile">My Profile</string>
+    <string name="dynamics">Dynamics</string>
+    <string name="floating_btn_desc">Floating button dashboard description</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="report">Report</string>
+    <string name="info">info</string>
+    <string name="info_knowledge"><![CDATA[Info & Knowledge]]></string>
+    <string name="add_record">Add Record</string>
+    <string name="mmhg">mmHg</string>
+    <string name="systolic">Systolic</string>
+    <string name="diastolic">Diastolic</string>
+    <string name="bmp">BMP</string>
+    <string name="pulse">Pulse</string>
+    <string name="sys_120_and_dia_80"><![CDATA[SYS < 120 and DIA < 80]]></string>
+    <string name="glycemic_index">Glycemic Index</string>
+    <string name="target_range">Target Range</string>
+    <string name="mg_dl">mg/dL</string>
+    <string name="low">Low</string>
+    <string name="normal">Normal</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="kcal">kcal</string>
+    <string name="create_acc">Create Account</string>
+    <string name="back_btn">This is a back button</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="height">Height (cm)</string>
+    <string name="sign_in">Sign in</string>
+    <string name="dob">Date of Birth</string>
+    <string name="weight">Weight (kg)</string>
+    <string name="choose_password">Choose Password</string>
+    <string name="des">This is a image Description</string>
+    <string name="doctor">Doctors</string>
+
+
+    // info strings for title1
+    <string name="title1">Learn About Blood Pressure</string>
+    <string name="t1_subtitle1">Introduction</string>
+    <string name="t1_subtitle2">What is blood pressure</string>
+    <string name="t1_desc1">Many of those with high blood pressure don not know they have it, \nbecause there are usually no warning signs. \n\nThis can be dangerous, because high blood pressure can lead to life-threatening conditions like heart attack or stroke. \n\nThe good news is that you can often prevent or treat high blood pressure.\n</string>
+    <string name="t1_desc2">Blood pressure is the force of your blood pushing against the walls of your arteries. \n\nEach time your heart beats, it pumps blood into the arteries. \n\nYour blood pressure is highest when your heart beats, pumping the blood. This is called systolic pressure. \n\nWhen your heart is at rest, between beats, your blood pressure falls. This is called diastolic pressure.</string>
+    <string name="youtube_url1">https://www.youtube.com/embed/4YNdp3pRjig?si=k0ZW_miVsUvpta8l</string>
+
+    // info strings for title2
+    <string name="title2">How to prevent high blood pressure</string>
+    <string name="t2_subtitle1">Introduction</string>
+    <string name="t2_subtitle2">Lowering blood pressure by exercises</string>
+    <string name="t2_desc1">You can help prevent high blood pressure by having a healthy lifestyle. If you already have high blood pressure, it is important to prevent it from getting worse or causing complications. You should get regular medical care and follow your prescribed treatment plan. Your plan will include healthy lifestyle habit recommendations and possibly medicines.</string>
+    <string name="t2_desc2">You have probably heard that high blood pressure is a problem. Sometimes blood pressure that is too low can also cause problems. A normal persons blood pressure is 120/80, if your blood pressure reading is 90/60 or lower, you have low blood pressure. Some people have low blood pressure all the time. They have no symptoms and their low readings are normal for them. In other people, blood pressure drops below normal because of a medical condition or certain medicines. Some people may have symptoms of lower blood pressure when standing up too quickly. Low blood pressure is a problem only if it causes dizziness, fainting or in extreme cases, shock.</string>
+    <string name="youtube_url2">https://www.youtube.com/embed/Sjj5sgempFg?si=TcCb_yxzOspqVnuP</string>
+
+    // info strings for title3
+    <string name="title3">Diet plan for hypertension DASH</string>
+    <string name="t3_subtitle1">Introduction</string>
+    <string name="t3_subtitle2">The DASH eating plan:</string>
+    <string name="t3_desc1">DASH stands for Dietary Approaches to Stop Hypertension. It is an eating sponsored by the National Heart, Lung, and Blood Institute (NHLBI). These studies showed that DASH lowers high plan that is based on research studies blood pressure and improves levels of cholesterol. This reduces your risk of getting heart diseases.</string>
+    <string name="t3_desc2">Emphasizes vegetables, fruits, and whole-grains. \nIncludes fat-free or low-fat dairy products, fish, poultry, beans, nuts, and vegetable oils. \nLimits foods that are high in saturated fat. These foods include fatty meats, full-fat dairy products, and tropical oils such as coconut, palm kernel, and palm oils. \nLimits sugar-sweetened beverages and sweets. \nAlong with DASH, other lifestyle changes can help lower your blood pressure. They include staying at a healthy weight, exercising, and not smoking.</string>
+    <string name="youtube_url3">https://www.youtube.com/embed/XdRsbKgwnGI?si=H8v25k0_LnbgzQrc</string>
+
+
+    // info strings for title4
+    <string name="title4">What are calories? Daily calories intake</string>
+    <string name="t4_subtitle1">Definition of calories:</string>
+    <string name="t4_subtitle2">What should my daily intake of calories be?</string>
+    <string name="t4_desc1">Calories are a measure of how much energy food or drink contains. The amount of energy you need will depend on: \nyour age – for example, growing children and teenagers may need more energy.\n\nyour lifestyle – for example, how active you are \n\nyour size – your height and weight can affect how quickly you use energy \n\nOther factors can also affect how much energy you burn. For example: \n\nsome hormones (chemicals produced by the body) – such as thyroid hormones \n\nsome medicines – such as glucocorticoids, a type of steroid used to treat inflammation \nbeing unwell</string>
+    <string name="t4_desc2">An ideal daily intake of calories varies depending on age, metabolism and levels of physical activity, among other things. \n\nGenerally, the recommended daily calorie intake is 2,000 calories a day for women and 2,500 for men.</string>
+    <string name="youtube_url4">https://www.youtube.com/embed/VEQaH4LruUo?si=FhQLvqjeqxCNGKcu</string>
+
+
+    // info strings for title5
+    <string name="title5">Maintaining a healthy weight</string>
+    <string name="t5_subtitle1">Calories and kilocalories</string>
+    <string name="t5_subtitle2">Maintaining a healthy weight</string>
+    <string name="t5_desc1">The term calorie is commonly used as shorthand for kilocalorie. You will find this written as kcal on food packets. \n\nKilojoules (kJ) are the equivalent of kilocalories within the International System of Units, and you will see both kJ and kcal on nutrition labels. 4.2kJ is equivalent to approximately 1kcal.</string>
+    <string name="t5_desc2">To find out if you are a healthy weight, use the BMI calculator.\n\nTo maintain a healthy weight, you need to balance the amount of calories you consume through food and drink with the amount of calories you burn through physical activity. \n\nLosing weight: \nTo lose weight in a healthy way, you need to use more energy than you consume by eating a healthy, balanced diet with fewer calories while increasing your physical activity.\n\nGaining Weight:\nYou should get advice from the GP if you are underweight (your body mass index is less than 18.5). \nTo gain weight, you need to eat more calories than your body uses each day.</string>
+    <string name="youtube_url5">https://www.youtube.com/embed/ori6YIOKCug?si=9ZUbzkULUpIKFp9B</string>
+
+
+    // info strings for title6
+    <string name="title6">Pulse and Heart Rate</string>
+    <string name="t6_subtitle1">Introduction</string>
+    <string name="t6_subtitle2">What is your heart rate?</string>
+    <string name="t6_desc1">Your heart rate is the number of times each minute that your heart beats, which is normally between 60 and 100 times per minute for adults. \n\nYour pulse is a way you can feel each time your heart beats. Measuring your heart rate helps you monitor your own health and know if you are exercising at the right level to get the most benefits to your health.</string>
+    <string name="t6_desc2">Your heart rate is the number of times that your heart beats in a minute. Your body automatically controls your heartbeat to match whatever you are doing or what is happening around you. That is why your heartbeat gets faster when you are active, excited or scared, and drops when you are resting, calm or comfortable. \n\n Your heart rate is an important indicator of your overall health too. When your heart rate is too fast or too slow, that can be a sign of heart or other health problems. The ability to feel your heart rate throughout your body is also a potential way for doctors to diagnose medical conditions.</string>
+    <string name="youtube_url6">https://www.youtube.com/embed/DLmmN0jy-s0?si=UbMfUM5GJnz00b1v</string>
+
+
+    // info strings for title7
+    <string name="title7">Blood Glucose Levels Means</string>
+    <string name="t7_subtitle1">What does a high blood glucose level mean?</string>
+    <string name="t7_subtitle2">What does a low blood glucose level mean?</string>
+    <string name="t7_desc1">If your fasting blood glucose level is 100 to 125 mg/dL (5.6 to 6.9 mmol/L), it usually means you have prediabetes. People with prediabetes have up to a 50% chance of developing Type 2 diabetes over the next five to 10 years. But you can take steps to prevent Type 2 diabetes from developing. \n\n If your fasting blood glucose level is 126 mg/dl (7.0 mmol/L) or higher on more than one testing occasion, it usually means you have diabetes. \n\n In either of these cases, your provider will likely order a glycated hemoglobin test (A1c) before diagnosing you with prediabetes or diabetes. An A1c shows your average blood sugar over a few months.</string>
+    <string name="t7_desc2">A blood sugar result of 70 mg/dL or lower is usually considered low. \n\n Low blood sugar (hypoglycemia) episodes are common in people with Type 1 diabetes and people with Type 2 diabetes who take certain medications. They’re much less common in people who don’t have diabetes.\n</string>
+    <string name="youtube_url7">https://www.youtube.com/embed/_f97dPx2vjI?si=1vmm9sQvDMKteyVE</string>
+
+
+    // info strings for title8
+    <string name="title8">Use a Continuous Glucose Monitor?</string>
+    <string name="t8_subtitle1">Should I Use a Continuous Glucose Monitor? </string>
+    <string name="t8_subtitle2">Bottom Line</string>
+    <string name="t8_desc1">While a finger stick blood sugar test gives you a static glimpse of your glucose level at that precise moment in time, a CGM is a more constant flow of information that provides a more complete picture and pattern of how you are doing. \n\nThis device monitors glucose levels under the skin, providing real-time results every 1 to 5 minutes. You insert a CGM on your body and wear it for 7 to 14 days, with the diabetes data being streamed to a separate handheld receiver or your smartphone app.</string>
+    <string name="t8_desc2">Glucose management is an important part of diabetes management. No magic number exists for (normal) glucose or blood sugar levels. While there are clinical guidelines on target goals for blood sugar levels and A1C tests, it is important to remember that (Your Diabetes May Vary).</string>
+    <string name="warning">warning</string>
+    <string name="less_than_72">less than 72</string>
+    <string name="youtube_url8">https://www.youtube.com/embed/EIUu7DuwpR0?si=Mn0v38x17h1jU4zu" title="YouTube video player" </string>
+
+    //info strings for title9
+    <string name="title9">Understanding Cholesterol Levels</string>
+    <string name="t9_subtitle1">What is Cholesterol?</string>
+    <string name="t9_subtitle2">Good Cholesterol vs. Bad Cholesterol</string>
+    <string name="t9_desc1">Cholesterol is a waxy substance found in your blood. Your body needs cholesterol to build healthy cells, but high levels of cholesterol can increase your risk of heart disease. There are two types of cholesterol: LDL (low-density lipoprotein) and HDL (high-density lipoprotein). LDL is often called \"bad\" cholesterol because it can build up in your arteries, while HDL is known as \"good\" cholesterol because it helps remove LDL from your bloodstream.</string>
+    <string name="t9_desc2">High cholesterol can lead to the buildup of plaque in your arteries, which can narrow or block them. This increases the risk of heart attack, stroke, and other cardiovascular diseases. Maintaining a healthy diet, exercising regularly, and avoiding smoking can help keep your cholesterol levels in check.</string>
+    <string name="youtube_url9">https://www.youtube.com/embed/0U7YHRW5dyc</string>
+
+    //info strings for title10
+    <string name="title10">Importance of Hydration</string>
+    <string name="t10_subtitle1">Why is Water Important?</string>
+    <string name="t10_subtitle2">Signs of Dehydration</string>
+    <string name="t10_desc1">Water is essential for nearly every function in your body. It helps regulate temperature, transport nutrients, and remove waste. Staying hydrated is crucial for maintaining energy levels, cognitive function, and overall health.</string>
+    <string name="t10_desc2">Dehydration occurs when your body loses more fluids than it takes in. Common signs include thirst, dry mouth, fatigue, dizziness, and dark urine. Severe dehydration can lead to serious health issues, so it\'s important to drink enough water throughout the day.</string>
+    <string name="youtube_url10">https://www.youtube.com/embed/9iMGFqMmUFs</string>
+
+    //info strings for title11
+    <string name="title11">Benefits of Regular Exercise</string>
+    <string name="t11_subtitle1">Physical Benefits of Exercise</string>
+    <string name="t11_subtitle2">Mental Health Benefits</string>
+    <string name="t11_desc1">Regular exercise improves cardiovascular health, strengthens muscles and bones, and helps maintain a healthy weight. It also reduces the risk of chronic diseases like diabetes, heart disease, and certain cancers.</string>
+    <string name="t11_desc2">Exercise is not just good for your body—it\'s great for your mind too. It can reduce stress, anxiety, and depression while boosting mood and overall mental well-being. Even a short walk can make a big difference!</string>
+    <string name="youtube_url11">https://www.youtube.com/embed/5bW3nVgoz4g</string>
+
+    //info strings for title12
+    <string name="title12">Sleep and Its Impact on Health</string>
+    <string name="t12_subtitle1">Why is Sleep Important?</string>
+    <string name="t12_subtitle2">Consequences of Poor Sleep</string>
+    <string name="t12_desc1">Sleep is essential for physical and mental health. It allows your body to repair itself, supports brain function, and helps regulate hormones. Adults typically need 7–9 hours of sleep per night for optimal health.</string>
+    <string name="t12_desc2">Poor sleep can lead to a weakened immune system, weight gain, and increased risk of chronic conditions like diabetes and heart disease. It can also affect mood, memory, and cognitive performance. Establishing a regular sleep routine can improve sleep quality.</string>
+    <string name="youtube_url12">https://www.youtube.com/embed/Tl5WgG8tY2I</string>
+
+
+    //info strings for title13
+    <string name="title13">The Importance of Mental Health</string>
+    <string name="t13_subtitle1">What is Mental Health?</string>
+    <string name="t13_subtitle2">How to Maintain Good Mental Health</string>
+    <string name="t13_desc1">Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood.</string>
+    <string name="t13_desc2">Maintaining good mental health involves practicing self-care, staying connected with loved ones, seeking professional help when needed, and managing stress through activities like exercise, meditation, and hobbies. Taking care of your mental health is just as important as taking care of your physical health.</string>
+    <string name="youtube_url13">https://www.youtube.com/embed/DxIDKZHW3-E</string>
+
+    /info strings for title14
+    <string name="title14">The Role of Fiber in Digestion</string>
+    <string name="t14_subtitle1">What is Dietary Fiber?</string>
+    <string name="t14_subtitle2">Benefits of a High-Fiber Diet</string>
+    <string name="t14_desc1">Dietary fiber, also known as roughage, is the indigestible part of plant foods. It is found in fruits, vegetables, whole grains, and legumes. Fiber is essential for maintaining a healthy digestive system and preventing constipation.</string>
+    <string name="t14_desc2">A high-fiber diet can help regulate bowel movements, lower cholesterol levels, control blood sugar levels, and aid in weight management. It also reduces the risk of developing chronic diseases such as heart disease, diabetes, and certain types of cancer.</string>
+    <string name="youtube_url14">https://www.youtube.com/embed/2H1PU2k7JzI</string>
+
+    //info strings for title15
+    <string name="title15">The Benefits of Meditation</string>
+    <string name="t15_subtitle1">What is Meditation?</string>
+    <string name="t15_subtitle2">Health Benefits of Meditation</string>
+    <string name="t15_desc1">Meditation is a practice where an individual uses techniques such as mindfulness, focusing the mind on a particular object, thought, or activity to achieve a mentally clear and emotionally calm state. It has been practiced for thousands of years and is known for its numerous health benefits.</string>
+    <string name="t15_desc2">Regular meditation can reduce stress, improve concentration, enhance self-awareness, and promote emotional health. It can also lower blood pressure, improve sleep, and help manage symptoms of anxiety and depression. Even a few minutes of meditation each day can make a significant difference.</string>
+    <string name="youtube_url15">https://www.youtube.com/embed/ZToicYcHIOU</string>
+
+    //info strings for title16
+    <string name="title16">Understanding Body Mass Index (BMI)</string>
+    <string name="t16_subtitle1">What is BMI?</string>
+    <string name="t16_subtitle2">Why is BMI Important?</string>
+    <string name="t16_desc1">Body Mass Index (BMI) is a simple calculation using a person\'s height and weight. The formula is BMI = kg/m² where kg is a person\'s weight in kilograms and m² is their height in meters squared. BMI is used to categorize individuals as underweight, normal weight, overweight, or obese.</string>
+    <string name="t16_desc2">BMI is an important indicator of overall health. It helps identify potential health risks associated with being underweight or overweight. However, BMI is not a perfect measure and does not account for muscle mass, bone density, or overall body composition. It should be used in conjunction with other assessments for a complete health evaluation.</string>
+    <string name="youtube_url16">https://www.youtube.com/embed/9s2ZGF9N8k0</string>
+
+
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="fitness">Fitness </string>
+    <string name="fitness_header">Fitness and Community</string>
+    <string name="sensor_not_available">Sensor not Available\n</string>
+
+    <!-- Exercise list -->
+    <string-array name="exercise_list">
+        <item>Breathing Exercise - Box Breathing</item>
+        <item>Breathing Exercise - Diaphragmatic Breathing</item>
+        <item>Breathing Exercise - 4-7-8 Technique</item>
+        <item>Stretching - Morning Stretches</item>
+        <item>Stretching - Desk Stretches</item>
+        <item>Mindfulness - 5-Minute Mindfulness</item>
+        <item>Mindfulness - Body Scan Meditation</item>
+        <item>Workout - 10-Minute Home Workout</item>
+        <item>Workout - Yoga Flow</item>
+        <item>Workout - Pilates</item>
+    </string-array>
+
+
+</resources>

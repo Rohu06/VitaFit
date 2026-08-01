@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        >
+        <ImageView
+            android:id="@+id/info_l_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/info"
+            android:scaleType="fitXY"
+            android:alpha="0.1"
+            android:translationZ="13dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/info_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_dark"
+            android:translationZ="12dp">
+
+            <ImageView
+                android:id="@+id/info_s_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/heart_beats" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="20dp"
+                android:backgroundTint="@color/white"
+                android:elevation="5dp"
+                app:cardCornerRadius="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/info_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/motor_oil"
+                android:text="Learn About Blood Pressure"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

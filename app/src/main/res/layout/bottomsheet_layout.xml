@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bs_dialog_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_remove"
+        android:tint="@color/input_border_color"
+        tools:ignore="UseAppTint" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/add_record_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/motor_oil"
+            android:text="@string/add_record"
+            android:textColor="@color/color_BW"
+            android:textSize="22sp" />
+
+
+        <ImageView
+            android:id="@+id/cancel_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_clear"
+            app:tint="@color/color_BW" />
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_below="@+id/add_record_heading"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:background="@color/black_light" />-->
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue_dark"
+        android:elevation="5dp"
+        app:cardCornerRadius="30dp"
+        app:cardUseCompatPadding="true">
+
+        <Button
+            android:id="@+id/add_bp_btn"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableEnd="@drawable/ic_add"
+            android:drawableTint="@color/white"
+            android:onClick="skip"
+            android:text="Blood Pressure"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+
+            tools:ignore="RtlSymmetry" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Yellowish"
+        android:elevation="5dp"
+        app:cardCornerRadius="30dp"
+        app:cardUseCompatPadding="true">
+
+        <Button
+            android:id="@+id/add_calories_btn"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableEnd="@drawable/ic_add"
+            android:drawableTint="@color/white"
+            android:onClick="skip"
+            android:text="Calories Intake"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+
+            tools:ignore="RtlSymmetry" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/greenish"
+        android:elevation="5dp"
+        app:cardCornerRadius="30dp"
+        app:cardUseCompatPadding="true">
+
+        <Button
+            android:id="@+id/add_sugar_level_btn"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableEnd="@drawable/ic_add"
+            android:drawableTint="@color/white"
+            android:onClick="skip"
+            android:text="Sugar level"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+
+            tools:ignore="RtlSymmetry" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

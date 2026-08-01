@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tab_bar">#242424</color>
+    <color name="color_BW">#FFFFFF</color>
+    <color name="color_WB">#141414</color>
+    <color name="actionbar_color">#101010</color>
+    <color name="blue_white_color">#FFFFFF</color>
+    <color name="card_bg_BW">#8F000000</color>
+    <color name="hintBW_color">#A2A2A2</color>
+    <color name="skyBlue_black">#141414</color>
+</resources>

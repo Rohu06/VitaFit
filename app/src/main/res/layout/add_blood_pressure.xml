@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".User.AddBloodPressure">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/actionbar_color"
+            android:elevation="5dp"
+            android:paddingHorizontal="15dp"
+            android:paddingTop="30dp">
+
+            <ImageView
+                android:id="@+id/bp_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/arrow_back_24"
+                android:transitionName="transition_back_arrow_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:fontFamily="@font/motor_oil"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="10dp"
+                android:text="New Record"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/blood_pressure2" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:backgroundTint="@color/light_green"
+                android:elevation="5dp"
+                app:cardCornerRadius="50dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="25dp"
+                    android:paddingVertical="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/motor_oil"
+                        android:text="Normal Blood Pressure"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_for_bp"
+                        app:tint="@color/white" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:letterSpacing="0.4"
+                android:text="@string/sys_120_and_dia_80" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/card_bg_BW"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/motor_oil"
+                            android:padding="5dp"
+                            android:paddingBottom="0dp"
+                            android:text="@string/systolic"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-5dp"
+                            android:padding="5dp"
+                            android:text="@string/mmhg"
+                            android:textSize="12sp" />
+
+                        <com.shawnlin.numberpicker.NumberPicker
+                            android:id="@+id/systolic_picker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:np_dividerColor="@color/Yellowish"
+                            app:np_height="150dp"
+                            app:np_max="300"
+                            app:np_min="0"
+                            app:np_selectedTextColor="@color/color_BW"
+                            app:np_selectedTextSize="26sp"
+                            app:np_textColor="@color/blue_dark"
+                            app:np_textSize="22sp"
+                            app:np_value="100"
+                            app:np_width="64dp" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/card_bg_BW"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/motor_oil"
+                            android:padding="5dp"
+                            android:paddingBottom="0dp"
+                            android:text="@string/diastolic"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-5dp"
+                            android:padding="5dp"
+                            android:text="@string/mmhg"
+                            android:textSize="12sp" />
+
+                        <com.shawnlin.numberpicker.NumberPicker
+                            android:id="@+id/diastolic_picker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:np_dividerColor="@color/greenish"
+                            app:np_height="150dp"
+                            app:np_max="260"
+                            app:np_min="0"
+                            app:np_selectedTextColor="@color/color_BW"
+                            app:np_selectedTextSize="26sp"
+                            app:np_textColor="@color/blue_dark"
+                            app:np_textSize="22sp"
+                            app:np_value="60"
+                            app:np_width="64dp" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/card_bg_BW"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/motor_oil"
+                            android:padding="5dp"
+                            android:paddingBottom="0dp"
+                            android:text="@string/pulse"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-5dp"
+                            android:padding="5dp"
+                            android:text="@string/bmp"
+                            android:textSize="12sp" />
+
+                        <com.shawnlin.numberpicker.NumberPicker
+                            android:id="@+id/pulse_picker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:np_dividerColor="@color/red"
+                            app:np_height="150dp"
+                            app:np_max="100"
+                            app:np_min="0"
+                            app:np_selectedTextColor="@color/color_BW"
+                            app:np_selectedTextSize="26sp"
+                            app:np_textColor="@color/blue_dark"
+                            app:np_textSize="22sp"
+                            app:np_value="35"
+                            app:np_width="64dp" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:fontFamily="@font/motor_oil"
+                android:text="Date &amp; Time"
+                android:textColor="@color/color_BW"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/card_bg_BW"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/ic_age"
+                            app:tint="@color/color_BW" />
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:text="12/17/2022"
+
+                            />
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/card_bg_BW"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/ic_time"
+                            app:tint="@color/color_BW"/>
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:text="13:33"
+
+                            />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/save_bp_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/blue_dark"
+                android:padding="13dp"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

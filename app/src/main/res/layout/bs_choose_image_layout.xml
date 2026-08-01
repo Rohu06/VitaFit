@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bs_dialog_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_remove"
+        android:tint="@color/input_border_color"
+        tools:ignore="UseAppTint" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/select_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/motor_oil"
+            android:text="Select Option"
+            tools:ignore="hardcodedtext"
+            android:textColor="@color/color_BW"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/cancel_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_clear"
+            app:tint="@color/color_BW" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/select_option"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/hintBW_color" />
+    </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            >
+        <LinearLayout
+            android:id="@+id/camera_ll"
+            android:layout_width="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/icon_camera" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/color_BW"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:text="Take Photo"
+                tools:ignore="hardcodedtext"/>
+        </LinearLayout>
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--android:layout_marginTop="5dp"-->
+<!--            android:background="@color/black_light"-->
+<!--            android:layout_gravity="center_vertical"-->
+            />
+        <LinearLayout
+            android:id="@+id/gallery_ll"
+            android:layout_width="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_height="wrap_content"
+
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/icon_gallery" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select from Gallery"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/color_BW"
+                android:textStyle="bold"
+                tools:ignore="hardcodedtext"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

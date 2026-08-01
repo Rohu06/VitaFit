@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_marginHorizontal="10dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/card_bg_BW"
+            android:paddingHorizontal="25dp"
+            android:paddingBottom="15dp"
+            tools:ignore="UselessParent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/history_sl_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24/11/2022"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=", "/>
+
+                <TextView
+                    android:id="@+id/history_sl_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9:58:33"
+                    android:textSize="12sp"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/history_gly_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Glycemic Index"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/motor_oil"
+                        android:textColor="@color/color_BW"/>
+                    <TextView
+                        android:id="@+id/history_sl_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="default"
+                        android:textSize="12sp"
+                        android:layout_below="@id/history_gly_txt"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="3dp"
+
+                        />
+                    <TextView
+                        android:id="@+id/history_gly_index"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="110"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/motor_oil"
+                        android:textColor="@color/green"
+
+
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mg_dl"
+                        android:textSize="10sp"
+                        android:layout_below="@id/history_gly_index"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="-2dp"
+
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

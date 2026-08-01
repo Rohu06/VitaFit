@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".User.InfoDetails">
+
+    <LinearLayout
+        android:id="@+id/info_details_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_dark"
+        android:paddingTop="30dp"
+        android:elevation="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/info_details_back_btn"
+            android:padding="10dp"
+            android:src="@drawable/arrow_back_24"
+            android:transitionName="transition_back_arrow_btn"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:text="Back to info"
+            android:textSize="24sp"
+            android:fontFamily="@font/motor_oil"
+            android:paddingHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:cardUseCompatPadding="true"
+                android:elevation="8dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="15dp"
+                android:background="@color/blue_dark">
+
+                <ImageView
+                    android:id="@+id/info_detail_l_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/info"
+                    android:scaleType="fitXY"
+                    android:alpha="0.1"
+                    android:translationZ="13dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue_dark"
+                    android:id="@+id/info_detail_ll"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/info_detail_s_image"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/blood_pressure2" />
+
+                    <TextView
+                        android:id="@+id/info_detail_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Learn About Blood Pressure"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/motor_oil"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                android:elevation="8dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:background="@color/blue_dark">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/card_bg_BW"
+                    android:padding="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/info_detail_subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Learn About Blood Pressure"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/motor_oil"
+                        android:textColor="@color/color_BW"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/info_detail_desc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Learn About Blood Pressure"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+
+
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                android:elevation="8dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:background="@color/blue_dark">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="25dp"
+                    android:background="@color/card_bg_BW"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/info_detail_subtitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Learn About Blood Pressure"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/motor_oil"
+                        android:textColor="@color/color_BW"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/info_detail_desc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Learn About Blood Pressure"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+
+
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                app:cardUseCompatPadding="true"
+                android:elevation="8dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:background="@color/blue_dark">
+
+            <WebView
+                android:id="@+id/youtube_knowledge"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

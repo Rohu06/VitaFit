@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_WB"
+    android:orientation="vertical"
+    tools:context=".User.DynamicsFragment">
+
+    <!-- Header Section -->
+    <RelativeLayout
+        android:id="@+id/dynamics_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="25dp"
+        android:background="@color/color_WB"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Hello, Welcome"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/dynamics_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/motor_oil"
+                android:text="Rohan Bhadvankar"
+                android:textColor="@color/color_BW"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/dynamics_profile_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_profile" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dynamics_ll1"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Calories and Blood Pressure Cards -->
+            <LinearLayout
+                android:id="@+id/calories_bp_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp">
+
+                <!-- Calories Intake Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="255dp"
+                    android:layout_marginHorizontal="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/purple_700"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingVertical="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/motor_oil"
+                            android:text="Calories Intake"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <com.github.lzyzsd.circleprogress.DonutProgress
+                            android:id="@+id/calories_progress"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center_horizontal"
+                            app:donut_finished_color="@color/purple_200"
+                            app:donut_finished_stroke_width="10dp"
+                            app:donut_progress="00"
+                            app:donut_text_color="@color/white"
+                            app:donut_unfinished_stroke_width="5dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/history_ci"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:text="See all"
+                                android:textAlignment="viewStart"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white" />
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/dynamics_add_calories_fab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_gravity="end"
+                                android:layout_marginHorizontal="10dp"
+                                android:contentDescription="@string/floating_btn_desc"
+                                android:src="@drawable/ic_add"
+                                app:backgroundTint="@color/white"
+                                app:fabSize="mini"
+                                app:tint="@color/black" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Blood Pressure Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="255dp"
+                    android:layout_marginHorizontal="0dp"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/card_bg_BW"
+                        android:orientation="vertical"
+                        android:paddingVertical="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="0dp"
+                            android:fontFamily="@font/motor_oil"
+                            android:text="Blood Pressure"
+                            android:textColor="@color/color_BW"
+                            android:textSize="18sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:id="@+id/systolic_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:fontFamily="@font/motor_oil"
+                                android:text="@string/systolic"
+                                android:textColor="@color/color_BW"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/systolic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/motor_oil"
+                                android:text="00"
+                                android:textColor="@color/Yellowish"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/systolic"
+                                android:layout_marginTop="-3dp"
+                                android:text="@string/mmhg"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/diastolic_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:fontFamily="@font/motor_oil"
+                                android:text="@string/diastolic"
+                                android:textColor="@color/color_BW"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/diastolic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/motor_oil"
+                                android:text="00"
+                                android:textColor="@color/greenish"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/diastolic"
+                                android:layout_marginTop="-3dp"
+                                android:text="@string/mmhg"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/pulse_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:fontFamily="@font/motor_oil"
+                                android:text="@string/pulse"
+                                android:textColor="@color/color_BW"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/pulse"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/motor_oil"
+                                android:text="00"
+                                android:textColor="@color/blue_dark"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/pulse"
+                                android:layout_marginTop="-3dp"
+                                android:text="@string/bmp"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="-5dp">
+
+                            <Button
+                                android:id="@+id/history_bp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-10dp"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:text="See all"
+                                android:textAlignment="viewStart"
+                                android:textAllCaps="false"
+                                android:textColor="@color/blue_dark" />
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/dynamics_add_bp_fab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/ic_add"
+                                app:backgroundTint="@color/purple_500"
+                                app:fabSize="mini"
+                                app:tint="@color/white" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- Sugar Level Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sugar_level_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calories_bp_ll"
+                android:layout_marginHorizontal="10dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/card_bg_BW"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/motor_oil"
+                            android:text="Sugar Level"
+                            android:textColor="@color/color_BW"
+                            android:textSize="18sp" />
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/dynamics_add_sl_fab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:src="@drawable/ic_add"
+                            app:backgroundTint="@color/blue_dark"
+                            app:fabSize="mini"
+                            app:tint="@color/white" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/dlycemic_index_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/motor_oil"
+                            android:text="@string/glycemic_index"
+                            android:textColor="@color/color_BW"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/sl_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/dlycemic_index_text"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="3dp"
+                            android:text="Default"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/sl_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="5dp"
+                            android:fontFamily="@font/motor_oil"
+                            android:text="00"
+                            android:textColor="@color/Yellowish"
+                            android:textSize="26sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/sl_value"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="-5dp"
+                            android:layout_marginEnd="3dp"
+                            android:text="@string/mg_dl"
+                            android:textSize="10sp" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/history_sl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="See all"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blue_dark" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Sugar Level Chart Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sugar_level_chart_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sugar_level_card"
+                android:layout_marginHorizontal="10dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/card_bg_BW"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/motor_oil"
+                        android:text="Sugar Level"
+                        android:textColor="@color/color_BW"
+                        android:textSize="18sp" />
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/hbc_sugar_level_dynamics"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+  <!-- Steps Counting Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/steps_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sugar_level_chart_card"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="100dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/card_bg_BW"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp">
+
+                    <!-- Step Count Header -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/motor_oil"
+                            android:text="Step Count"
+                            android:textColor="@color/color_BW"
+                            android:textSize="18sp" />
+
+                        <!-- FloatingActionButton to Add Steps -->
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/addSTCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:src="@drawable/ic_add"
+                            app:backgroundTint="@color/blue_dark"
+                            app:fabSize="mini"
+                            app:tint="@color/white" />
+                    </RelativeLayout>
+
+                    <!-- Step Count Display -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/steps_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/motor_oil"
+                            android:text="Steps"
+                            android:textColor="@color/color_BW"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/steps_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="5dp"
+                            android:fontFamily="@font/motor_oil"
+                            android:text="0"
+                            android:textColor="@color/Yellowish"
+                            android:textSize="26sp" />
+                    </RelativeLayout>
+
+                    <!-- Button to View Step History -->
+                    <Button
+                        android:id="@+id/history_steps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="See all"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blue_dark" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

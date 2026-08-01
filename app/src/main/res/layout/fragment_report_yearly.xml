@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.FragmentReportYearly"
+    android:background="@color/skyBlue_black"
+    android:orientation="vertical"
+    >
+
+    <RadioGroup
+        android:id="@+id/yearly_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="25dp"
+        >
+
+
+        <RadioButton
+            android:id="@+id/yearly_pressure_rBtn"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+
+            android:text="Pressure"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/radio_flat_text_selector" />
+        <RadioButton
+            android:id="@+id/yearly_sugar_rBtn"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Sugar"
+            android:textColor="@color/radio_flat_text_selector" />
+        <RadioButton
+            android:id="@+id/yearly_calories_rBtn"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Calories"
+            android:textColor="@color/radio_flat_text_selector" />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/yearly_container"
+        />
+
+</LinearLayout>

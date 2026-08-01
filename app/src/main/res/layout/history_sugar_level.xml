@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".User.HistorySugarLevel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionbar_color"
+        android:elevation="5dp"
+        android:paddingHorizontal="15dp"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/history_sl_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/arrow_back_24"
+            android:transitionName="transition_back_arrow_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:fontFamily="@font/motor_oil"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="10dp"
+            android:text="Your Sugar Levels"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_history_sl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/rv_sl_history_row"
+
+        />
+</LinearLayout>
