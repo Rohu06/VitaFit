@@ -1,72 +1,61 @@
-# 🩺 VitaFit
+# VitaFit
 
-VitaFit is an Android health monitoring application designed to help users track their daily health and fitness activities in one place. The app provides an intuitive interface for recording health metrics, viewing progress, and maintaining a healthier lifestyle.
+VitaFit is a comprehensive Android health and fitness monitoring application designed to record daily health metrics, analyze progress, and encourage a healthier lifestyle through intuitive tracking tools and an AI-powered assistant.
 
-## ✨ Features
+## Features
 
-* 💧 Water intake tracking
-* 🔥 Calorie tracking
-* 🩸 Blood sugar monitoring
-* ❤️ Blood pressure monitoring
-* 👣 Daily step count tracking
-* 📊 Weekly and monthly health reports
-* 📈 Interactive charts and analytics
-* 👤 User profile management
-* 🤖 AI-powered health assistant
-* 💾 Local data storage using SQLite
+- **Water & Calorie Tracking:** Monitor daily hydration and daily caloric intake.
+- **Vitals Monitoring:** Track blood sugar levels, blood pressure readings, and daily step counts.
+- **Analytics & Reports:** Generate comprehensive weekly/monthly reports with interactive data visualization.
+- **AI Assistant:** Instant health insights and context-aware query responses.
+- **Local Persistence:** Structured data storage using SQLite.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-* **Language:** Java
-* **IDE:** Android Studio
-* **Database:** SQLite
-* **UI:** XML
-* **Charts:** MPAndroidChart
+- **Language:** Java
+- **IDE:** Android Studio
+- **Database:** SQLite
+- **UI Architecture:** XML Layouts
+- **Data Visualization:** MPAndroidChart
 
-## 📱 Screenshots
+## Screenshots
 
-### 🔑 Authentication & Main Dashboard
+| Dashboard | Reports & Analytics | AI Assistant | Profile |
+| :---: | :---: | :---: | :---: |
+| <img src="screenshots/Dashboard_Screen.png" width="200" alt="Dashboard" /> | <img src="screenshots/Reports_Analytics_Screen.png" width="200" alt="Reports & Analytics" /> | <img src="screenshots/AI_Assistant_Screen.png" width="200" alt="AI Assistant" /> | <img src="screenshots/Profile_Screen.png" width="200" alt="Profile" /> |
 
-| Login | Register | Dashboard |
-| :---: | :---: | :---: |
-| <img src="screenshots/Login_Screen.png" width="220" alt="Login Screen" /> | <img src="screenshots/Register_Screen.png" width="220" alt="Register Screen" /> | <img src="screenshots/Dashboard_Screen.png" width="220" alt="Dashboard Screen" /> |
+## Getting Started
 
-### 📊 Reports & AI Assistant
+### Prerequisites
+- Android Studio Jellyfish / Ladybug or newer
+- JDK 17+
+- Android SDK 24+ (Android 7.0 Nougat minimum)
 
-| Reports & Analytics | PDF Report | AI Assistant |
-| :---: | :---: | :---: |
-| <img src="screenshots/Reports_Analytics_Screen.png" width="220" alt="Reports & Analytics Screen" /> | <img src="screenshots/PDF_Report_Screen.png" width="220" alt="PDF Report Screen" /> | <img src="screenshots/AI_Assistant_Screen.png" width="220" alt="AI Assistant Screen" /> |
+### Setup & Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Rohu06/VitaFit.git
+   ```
+2. Open the project directory in **Android Studio**.
+3. Allow Gradle to sync dependencies automatically.
+4. Run the project on an Android Emulator or connected physical device.
 
-### 🏋️ Fitness & User Profile
+## Future Enhancements
 
-| Fitness Clubs | Profile | Health Info |
-| :---: | :---: | :---: |
-| <img src="screenshots/Fitness_Clubs_Screen.png" width="220" alt="Fitness Clubs Screen" /> | <img src="screenshots/Profile_Screen.png" width="220" alt="Profile Screen" /> | <img src="screenshots/Health_Info_Screen.png" width="220" alt="Health Info Screen" /> |
+- Cloud synchronization and backup
+- Firebase authentication integration
+- Custom health reminders and push notifications
+- Dark mode toggle support
+- Wear OS device integration
 
-## 🚀 Getting Started
+## Contributing
 
-1. Clone the repository.
-2. Open the project in Android Studio.
-3. Sync Gradle dependencies.
-4. Build and run the application on an Android device or emulator.
+Contributions, suggestions, and feature requests are welcome. Feel free to open an issue or submit a pull request.
 
-## 📌 Future Enhancements
+## License
 
-* Cloud data backup
-* Firebase authentication
-* Health reminders and notifications
-* Dark mode support
-* Wear OS integration
-* Enhanced AI health insights
-
-## 🤝 Contributing
-
-Contributions, suggestions, and feedback are welcome. Feel free to open an issue or submit a pull request.
-
-## 📄 License
-
-This project is intended for educational and learning purposes.
+Distributed for educational and demonstration purposes.
 
 ---
 
-⭐ If you found this project useful, consider giving it a star!
+⭐ *If you find this project helpful, consider starring the repository!*
