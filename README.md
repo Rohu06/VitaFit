@@ -25,23 +25,23 @@ VitaFit is an Android health monitoring application designed to help users track
 
 ## 📱 Screenshots
 
-<p align="center">
-  <img src="screenshots/Login_Screen.png" width="30%" alt="Login Screen" />
-  <img src="screenshots/Register_Screen.png" width="30%" alt="Register Screen" />
-  <img src="screenshots/Dashboard_Screen.png" width="30%" alt="Dashboard Screen" />
-</p>
+### 🔑 Authentication & Main Dashboard
 
-<p align="center">
-  <img src="screenshots/AI_Assistant_Screen.png" width="30%" alt="AI Assistant Screen" />
-  <img src="screenshots/Reports_Analytics_Screen.png" width="30%" alt="Reports & Analytics Screen" />
-  <img src="screenshots/PDF_Report_Screen.png" width="30%" alt="PDF Report Screen" />
-</p>
+| Login | Register | Dashboard |
+| :---: | :---: | :---: |
+| <img src="screenshots/Login_Screen.png" width="220" alt="Login Screen" /> | <img src="screenshots/Register_Screen.png" width="220" alt="Register Screen" /> | <img src="screenshots/Dashboard_Screen.png" width="220" alt="Dashboard Screen" /> |
 
-<p align="center">
-  <img src="screenshots/Fitness_Clubs_Screen.png" width="30%" alt="Fitness Clubs Screen" />
-  <img src="screenshots/Profile_Screen.png" width="30%" alt="Profile Screen" />
-  <img src="screenshots/Health_Info_Screen.png" width="30%" alt="Health Info Screen" />
-</p>
+### 📊 Reports & AI Assistant
+
+| Reports & Analytics | PDF Report | AI Assistant |
+| :---: | :---: | :---: |
+| <img src="screenshots/Reports_Analytics_Screen.png" width="220" alt="Reports & Analytics Screen" /> | <img src="screenshots/PDF_Report_Screen.png" width="220" alt="PDF Report Screen" /> | <img src="screenshots/AI_Assistant_Screen.png" width="220" alt="AI Assistant Screen" /> |
+
+### 🏋️ Fitness & User Profile
+
+| Fitness Clubs | Profile | Health Info |
+| :---: | :---: | :---: |
+| <img src="screenshots/Fitness_Clubs_Screen.png" width="220" alt="Fitness Clubs Screen" /> | <img src="screenshots/Profile_Screen.png" width="220" alt="Profile Screen" /> | <img src="screenshots/Health_Info_Screen.png" width="220" alt="Health Info Screen" /> |
 
 ## 🚀 Getting Started
 
